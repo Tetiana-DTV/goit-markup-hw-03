@@ -200,11 +200,11 @@ address ul li a:focus {
 .about-webstudio {
     display: flex;
     align-items: center;
-    flex-basis: calc((100% - 24px * 3) / 4);
 }
 .about-ws {
     display: flex;
     align-items: center;
+    flex-basis: calc((100% - 24px * 3) / 4);
 }
 .about-list {
     display: block;
