@@ -156,7 +156,6 @@ address ul li a:focus {
     color: var(--ocean);
 }
 
-
 /* main */
 .section-main {
     font-weight: 700;
@@ -196,10 +195,11 @@ address ul li a:focus {
 .button:focus {
     background-color: var(--ocean);
 }
-
+/* Feature */
 .about-webstudio {
     display: flex;
     align-items: center;
+    /* flex-basis: calc((100% - 24px * 3) / 4); */
 }
 .about-ws {
     display: flex;
