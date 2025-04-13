@@ -31,9 +31,11 @@ ol {
     margin: 0;
     padding: 0;
 }
+
 img {
     display: block;
 }
+
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
@@ -96,11 +98,10 @@ a {
     display: block;
     padding: 24px 0;
 }
-
 .header-studio a {
     font-weight: 500;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
 }
@@ -113,11 +114,9 @@ a {
 .header-list-nav a:active {
     color: var(--ocean);
 }
-
 .page-address {
     font-style: normal;
     margin-left: auto;
-
 }
 .header-address {
     display: flex;
@@ -132,7 +131,6 @@ a {
     color: var(--slate);
     padding: 24px 0;
 }
-
 .header-address a {
     font-family: var(--font-family);
     font-weight: 400;
@@ -143,7 +141,6 @@ a {
     text-decoration: none;
     list-style-type: none;
 }
-
 address ul a {
     font-family: var(--font-family);
     font-weight: 400;
@@ -167,18 +164,16 @@ address ul li a:focus {
     letter-spacing: 0.02em;
     color: var(--white);
     text-align: center;
-    min-width: 496px;
-    padding: 188px 0 188px;
-    /* margin: 0 auto;
-    margin-top: 188px;
-    margin-bottom: 48px; */
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
 }
 
 .section-one {
     background: var(--navy-blue);
-    display: flex;
-    align-items: center;
-    text-align: center;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .button {
@@ -189,18 +184,17 @@ address ul li a:focus {
     color: var(--white);
     background-color: var(--iris);
     cursor: pointer;
+
+    display: block;
+    border: none;
     min-width: 169px;
     height: 56px;
-    border: none;
-    border-radius: 4px;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 188px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .button:hover {
     background-color: var(--ocean);
 }
-
 .button:focus {
     background-color: var(--ocean);
 }
@@ -223,23 +217,12 @@ address ul li a:focus {
 ul.about-webstudio {
     display: flex;
     gap: 24px;
-
-}
-.about-webstudio {
-    display: flex;
-    align-items: center;
-    /* flex-basis: calc((100% - 24px * 3) / 4); */
-}
-.about-ws {
-    display: flex;
-    align-items: center;
-    flex-basis: calc((100% - 24px * 3) / 4);
 }
 .about-list {
     display: block;
     margin: 120px 0;
+    flex-basis: calc((100% - 24px * 3) / 4);
 }
-
 .section-feature-name {
     font-family: var(--font-family);
     font-weight: 500;
@@ -256,18 +239,11 @@ ul.about-webstudio {
     letter-spacing: 0.02em;
     color: var(--slate);
 }
-
 /* Our team */
 .section-our-team {
     background: var(--cloud);
     padding: 120px 0;
 }
-
-/* .our-team-container{
-    display: flex;
-    align-items: center;
-    padding-bottom: 120px;
-} */
 .about-us {
     font-weight: 700;
     font-size: 36px;
@@ -276,19 +252,11 @@ ul.about-webstudio {
     letter-spacing: 0.02em;
     color: var(--navy-blue);
     text-transform: capitalize;
-    /* max-width: 100%; */
-    margin-bottom: 72px;
-    padding-top: 120px;
 }
-
 .team-card-list{
-    /* background-color: var(--white); */
     display: flex;
     gap: 24px;
-    /* flex-wrap: wrap;
-    justify-content: center; */
 }
-
 .name {
     font-weight: 500;
     font-size: 20px;
@@ -296,34 +264,17 @@ ul.about-webstudio {
     letter-spacing: 0.02em;
     color: var(--navy-blue);
     margin-bottom: 8px;
-    /* padding-top: 32px; */
     text-align: center;
 }
 .personal-position {
-    /* font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--slate); */
     text-align: center;
-    margin-bottom: 8px;
 }
 .team-name-list {
-    /* display: block;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; */
-    /* display: flex;
-    gap: 24px;
-    margin-top: 72px; */
-    width: calc((100% - 72px) / 4);
     border-radius: 0 0 4px 4px;
-    /* padding: 0px 0px 32px 0px; */
     max-width: 264px;
-    /* height: auto; */
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background-color: var(--white);
-    margin-bottom: 120px;
+    flex-basis: calc((100% - 3 * 24px) / 4);
 }
 .team-box {
     padding: 32px 0;
@@ -331,7 +282,8 @@ ul.about-webstudio {
 
  /* Our Portfolio */
  .section-our-portfolio{
-    padding: 120px 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
  }
  .about-portfolio {
     font-family: var(--font-family);
@@ -343,29 +295,15 @@ ul.about-webstudio {
     color: var(--navy-blue);
     text-align: center;
     max-width: 100%;
-    /* margin: 120px auto 72px; */
     margin-bottom: 72px;
  }
- /* .about-portfolio-container {
-    display: flex;
-    align-items: center;
-    padding-bottom: 120px;
- } */
  .portfolio-card {
     display: flex;
+    flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
-    flex-wrap: wrap;
-    /* flex-direction: row;
-    justify-content: center; */
  }
- /* .portfolio-card:last-child {
-    padding: 0;
- } */
-
  .portfolio-list {
-    /* padding-bottom: 48px;
-     */
     width: calc((100% - 48px) / 3);
  }
 .portfolio-box {
@@ -374,17 +312,9 @@ ul.about-webstudio {
     border-top: none;
 }
 .about-portfolio-name {
-    /* font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--navy-blue); */
-    /* padding-top: 32px; */
     margin-bottom: 8px;
 }
 .about-portfolio-position {
-    /* font-family: var(--font-family); */
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -392,14 +322,10 @@ ul.about-webstudio {
     color: var(--slate);
     margin-bottom: 32px;
 }
-
-/* footer */
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.footer {
+    background: var(--navy-blue);
+    padding: 100px 0;
 }
-
 .footer-logo {
     font-family: var(--second-family);
     font-weight: 700;
@@ -408,8 +334,8 @@ ul.about-webstudio {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--iris);
-    padding-top: 100px;
     margin-bottom: 16px;
+    display: inline-block;
 }
 .span-footer-logo {
     font-family: var(--second-family);
@@ -419,12 +345,7 @@ ul.about-webstudio {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--cloud);
-    display: inline-block;
 }
-.footer {
-    background: var(--navy-blue);
-    padding: 100px 0;
-} 
 .footer-text {
     font-family: var(--font-family);
     font-weight: 400;
@@ -433,5 +354,4 @@ ul.about-webstudio {
     letter-spacing: 0.02em;
     color: var(--cloud);
     max-width: 264px;
-    padding-bottom: 100px;
 }
