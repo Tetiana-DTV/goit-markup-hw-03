@@ -191,6 +191,7 @@ address ul li a:focus {
     height: 56px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 4px;
 }
 .button:hover {
     background-color: var(--ocean);
@@ -252,6 +253,7 @@ ul.about-webstudio {
     letter-spacing: 0.02em;
     color: var(--navy-blue);
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 .team-card-list{
     display: flex;
