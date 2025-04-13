@@ -31,6 +31,9 @@ ol {
     margin: 0;
     padding: 0;
 }
+img {
+    display: block;
+}
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
@@ -164,10 +167,11 @@ address ul li a:focus {
     letter-spacing: 0.02em;
     color: var(--white);
     text-align: center;
-    width: 496px;
-    margin: 0 auto;
+    min-width: 496px;
+    padding: 188px 0 188px;
+    /* margin: 0 auto;
     margin-top: 188px;
-    margin-bottom: 48px;
+    margin-bottom: 48px; */
 }
 
 .section-one {
@@ -185,6 +189,11 @@ address ul li a:focus {
     color: var(--white);
     background-color: var(--iris);
     cursor: pointer;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    display: block;
     margin: 0 auto;
     margin-bottom: 188px;
 }
@@ -196,6 +205,26 @@ address ul li a:focus {
     background-color: var(--ocean);
 }
 /* Feature */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.values-section {
+    padding: 120px 0;
+}
+ul.about-webstudio {
+    display: flex;
+    gap: 24px;
+
+}
 .about-webstudio {
     display: flex;
     align-items: center;
@@ -218,7 +247,7 @@ address ul li a:focus {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 .section-feature-text {
     font-weight: 400;
@@ -227,36 +256,37 @@ address ul li a:focus {
     letter-spacing: 0.02em;
     color: var(--slate);
 }
-.section-our-team {
-    background: var(--cloud);
-    padding-top: 120px;
-}
 
 /* Our team */
+.section-our-team {
+    background: var(--cloud);
+    padding: 120px 0;
+}
 
-.our-team-container{
+/* .our-team-container{
     display: flex;
     align-items: center;
     padding-bottom: 120px;
-}
+} */
 .about-us {
     font-weight: 700;
     font-size: 36px;
+    text-align: center;
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
-    text-align: center;
     text-transform: capitalize;
-    max-width: 100%;
-    margin: 0 auto 72px;
+    /* max-width: 100%; */
+    margin-bottom: 72px;
+    padding-top: 120px;
 }
 
 .team-card-list{
-    background-color: #FFFFFF;
+    /* background-color: var(--white); */
     display: flex;
     gap: 24px;
-    flex-wrap: wrap;
-    justify-content: center;
+    /* flex-wrap: wrap;
+    justify-content: center; */
 }
 
 .name {
@@ -265,34 +295,44 @@ address ul li a:focus {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
-    padding-bottom: 8px;
-    padding-top: 32px;
+    margin-bottom: 8px;
+    /* padding-top: 32px; */
     text-align: center;
 }
 .personal-position {
-    font-weight: 400;
+    /* font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--slate);
+    color: var(--slate); */
     text-align: center;
+    margin-bottom: 8px;
 }
 .team-name-list {
-    display: block;
+    /* display: block;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; */
+    /* display: flex;
     gap: 24px;
-    margin-top: 72px;
+    margin-top: 72px; */
+    width: calc((100% - 72px) / 4);
     border-radius: 0 0 4px 4px;
-    padding: 0px 0px 32px 0px;
+    /* padding: 0px 0px 32px 0px; */
     max-width: 264px;
-    height: auto;
+    /* height: auto; */
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    background: var(--white);
+    background-color: var(--white);
+    margin-bottom: 120px;
+}
+.team-box {
+    padding: 32px 0;
 }
 
  /* Our Portfolio */
+ .section-our-portfolio{
+    padding: 120px 0;
+ }
  .about-portfolio {
     font-family: var(--font-family);
     font-weight: 700;
@@ -303,46 +343,54 @@ address ul li a:focus {
     color: var(--navy-blue);
     text-align: center;
     max-width: 100%;
-    margin: 120px auto 72px;
+    /* margin: 120px auto 72px; */
+    margin-bottom: 72px;
  }
- .about-portfolio-container {
+ /* .about-portfolio-container {
     display: flex;
     align-items: center;
     padding-bottom: 120px;
- }
+ } */
  .portfolio-card {
     display: flex;
-    gap: 24px;
-    flex-direction: row;
+    column-gap: 24px;
+    row-gap: 48px;
     flex-wrap: wrap;
-    justify-content: center;
+    /* flex-direction: row;
+    justify-content: center; */
  }
- .portfolio-card:last-child {
+ /* .portfolio-card:last-child {
     padding: 0;
- }
+ } */
 
  .portfolio-list {
-    padding-bottom: 48px;
+    /* padding-bottom: 48px;
+     */
+    width: calc((100% - 48px) / 3);
  }
-
+.portfolio-box {
+    padding: 32px 16px;
+    border: 1px solid var(--cornflower);
+    border-top: none;
+}
 .about-portfolio-name {
-    font-family: var(--font-family);
+    /* font-family: var(--font-family);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--navy-blue);
-    padding-top: 32px;
-    padding-bottom: 8px;
+    color: var(--navy-blue); */
+    /* padding-top: 32px; */
+    margin-bottom: 8px;
 }
 .about-portfolio-position {
-    font-family: var(--font-family);
+    /* font-family: var(--font-family); */
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate);
-    padding-bottom: 32px;
+    margin-bottom: 32px;
 }
 
 /* footer */
@@ -371,9 +419,11 @@ address ul li a:focus {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--cloud);
+    display: inline-block;
 }
 .footer {
     background: var(--navy-blue);
+    padding: 100px 0;
 } 
 .footer-text {
     font-family: var(--font-family);
